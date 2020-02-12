@@ -18,6 +18,13 @@ body
   color: darkslategray;
 }
 
+#info
+{
+	display: inline-block;
+	float : right;
+	z-index : -12;
+}
+
 h1
 {
 	text-shadow: maroon 1px 0 10px;
