@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Didact+Gothic|Montserrat+Alternates|Patrick+Hand|Lato|Varela+Round&display=swap');
+html
+{
+  height: auto;
+  background-image: linear-gradient(rgba(186, 95, 126, 0.5), rgba(211, 102, 83, 0.5)),
+                  url("images/background.jpg");
+  background-attachment:fixed;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	text-align: left;  
+  text-justify:auto;
+  font-family: Lato, Montserrat Alternates;
+  font-size: 1.2em;
+  color: darkslategray;
+}
+
+/*#description
+{
+	text-align: center;
+	text-justify: auto;
+}*/
+
+.partie
+{
+	text-shadow: maroon 1px 0 10px;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+#evobot
+{	 
+	width: 30%;
+	height: auto;
+    z-index: 10;
+    margin-left: 25%;
+}
+
+#robot
+{
+	width: 10%;
+	height: auto;
+	display: block;
+	float: left;
+	margin-left: 2%;
+	z-index: -10;
+	transform: rotate(10deg);
+}
+
+#ground
+{
+	width: 105.4%;
+	height: auto;
+	margin-bottom: -10%;
+	margin-left: -5%;
+}
+
+.tableau
+{
+	max-width: 1200px;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#right
+{
+  display: block;
+  float: right;
+  margin-right: 5%;
+}
+
+#video
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4mm ridge rgba(0, 0, 0, .6);
+}
+
+#theme
+{
+  display: block;
+  float: right;
+  border-radius: 100%;
+  background: rgb(255,255,255);
+}
+
+/**** Post-it pour le texte description *****/
+
+#description
+{
+  line-height: 1;
+  text-align:left;  
+  padding: 1%;   
+  min-width: 100px;
+  max-width: 800px;    
+  margin-left: 20%;    
+  min-height:200px;
+  max-height:1000px;
+  padding-top:35px;
+  margin-top: -7%;
+  position:relative;   
+  border:1px solid #E8E8E8;  
+  border-top:60px solid #fafa84;       
+  border-bottom-right-radius: 60px 5px;
+  display:inline-block;    
+  background: #ffff88; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#bde56c), color-stop(82%,#bde56c), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+  background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+ 
+#description:after 
+{     
+  content: "";
+  position:absolute;
+  z-index:-1;
+  right:-0px; bottom:20px;
+  width:200px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+  -moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+
+/**** Post-it pour le texte Interaction 1 *****/
+
+.interaction1
+{
+  line-height: 1;
+  text-align:left;  
+  padding: 1%;   
+  min-width: 100px;
+  max-width: 300px;    
+  margin-left: 1.5%;    
+  min-height:50px;
+  max-height:500px;
+  padding-top:35px;
+  position:relative;   
+  border:1px solid #E8E8E8;  
+  border-top:60px solid #b8e066;       
+  border-bottom-right-radius: 60px 5px;
+  display:inline-block;    
+  background: #bde56c;
+  background: -moz-linear-gradient(-45deg, #bde56c 81%, #bde56c 82%, #bde56c 82%, #dcf3ac 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#bde56c), color-stop(82%,#bde56c), color-stop(82%,#bde56c), color-stop(100%,#dcf3ac)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #bde56c 81%,#bde56c 82%,#bde56c 82%,#dcf3ac 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #bde56c 81%,#bde56c 82%,#bde56c 82%,#dcf3ac 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #bde56c 81%,#bde56c 82%,#bde56c 82%,#dcf3ac 100%); /* IE10+ */
+  background: linear-gradient(135deg, #bde56c 81%,#bde56c 82%,#bde56c 82%,#dcf3ac 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bde56c', endColorstr='#dcf3ac',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+ 
+.interaction1:after 
+{     
+  content: "";
+  position:absolute;
+  z-index:-1;
+  right:-0px; bottom:20px;
+  width:200px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+  -moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+/**** Post-it pour le texte Interaction 2 *****/
+
+.interaction2
+{
+  line-height: 1;
+  text-align:left;  
+  padding: 1%;   
+  min-width: 200px;
+  max-width:400px;    
+  margin-left: 7%;    
+  min-height:50px;
+  max-height:500px;
+  padding-top:35px;
+  position:relative;   
+  border:1px solid #f6a9e5;  
+  border-top:60px solid #f376d8;       
+  border-bottom-right-radius: 60px 5px;
+  display:inline-block;    
+  background: #f97add;
+  background: -moz-linear-gradient(-45deg, #f97add 81%, #f97add 82%, #f97add 82%, #f6a9e5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#f97add), color-stop(82%,#f97add), color-stop(82%,#f6a9e5), color-stop(100%,#f6a9e5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #f97add 81%,#f97add 82%,#f97add 82%,#f6a9e5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #f97add 81%,#f97add 82%,#f97add 82%,#f6a9e5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #f97add 81%,#f97add 82%,#f97add 82%,#f6a9e5 100%); /* IE10+ */
+  background: linear-gradient(135deg, #f97add 81%,#f97add 82%,#f97add 82%,#f6a9e5 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f97add', endColorstr='#f6a9e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+ 
+.interaction2:after 
+{     
+  content: "";
+  position:absolute;
+  z-index:-1;
+  right:-0px; bottom:20px;
+  width:200px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+-moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+ -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+      -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+     -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+         transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+/**** Post-it pour le texte Interaction 3 *****/
+
+.interaction3
+{
+  line-height: 1;
+  text-align:left;  
+  padding: 1%;   
+  min-width: 300px;
+  max-width: 700px;    
+  margin-left: 30%;    
+  min-height: 50px;
+  max-height: 200px;
+  padding-top: 35px;
+  position:relative;  
+  border:1px solid #b2e8ff;  
+  border-top:60px solid #7cc6e5;       
+  border-bottom-right-radius: 60px 5px;
+  display:inline-block;    
+  background: #81cded;
+  background: -moz-linear-gradient(-45deg, #81cded 81%, #81cded 82%, #81cded 82%, #b2e8ff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#81cded), color-stop(82%,#81cded), color-stop(82%,#b2e8ff), color-stop(100%,#b2e8ff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #81cded 81%,#81cded 82%,#81cded 82%,#b2e8ff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #81cded 81%,#81cded 82%,#81cded 82%,#b2e8ff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #81cded 81%,#81cded 82%,#81cded 82%,#b2e8ff 100%); /* IE10+ */
+  background: linear-gradient(135deg, #81cded 81%,#81cded 82%,#81cded 82%,#b2e8ff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81cded', endColorstr='#b2e8ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+ 
+.interaction3:after 
+{     
+  content: "";
+  position:absolute;
+  z-index:-1;
+  right:-0px; bottom:20px;
+  width:200px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+-moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+ -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+      -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+     -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+         transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+
+/***** Bouton telecharger l'executable *****/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 20vw;
+  margin: 0 auto;
+}
+
+.btn {
+  flex: .2 .2 auto;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(128, 0, 0, 0.5);
+  border-radius: 10px;
+  text-decoration: none;
+  color: darkslategray;
+ }
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+  color: darkslategray;
+}
+.bt:active{
+	text-decoration: none;
+    color: darkslategray;
+}
+
+.btn-5 {
+  background-image: linear-gradient(to right, #d36653 0%, #fff 51%, #ba5f7e 100%);
+}
+
+#equipe
+{
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: left;
+  margin-left: 30%;
+}
+
+#team
+{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+}
