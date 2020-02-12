@@ -23,6 +23,7 @@ body
 	display: inline-block;
 	float : right;
 	z-index : -12;
+	margin-top : 5%;
 }
 
 h1
